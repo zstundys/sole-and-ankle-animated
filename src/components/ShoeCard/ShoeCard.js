@@ -102,18 +102,6 @@ const NewFlag = styled(Flag)`
 
 const ImageWrapper = styled.div`
   position: relative;
-
-  @media ${QUERIES.prefersMotion} {
-    ${Flag} {
-      transition: background-color 300ms, border-radius 300ms;
-    }
-
-    &:hover ${Flag} {
-      background: hsl(var(--hover-hue) 100% 50%);
-      border-top-left-radius: 16px;
-      border-bottom-left-radius: 16px;
-    }
-  }
 `;
 
 const Image = styled.img`
